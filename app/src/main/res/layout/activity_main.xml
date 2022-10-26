@@ -4,47 +4,71 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".MainActivity"
+    android:background="@color/purple_200"
+    >
+
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="128dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:src="@mipmap/ic_sociallauncher_foreground"
+        android:id="@+id/tree"
+        >
+
+    </ImageView>
 
     <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="UserName"
         android:id="@+id/username"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="@+id/cancel"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:background="@color/white"
+        android:text="Username"
+        app:layout_constraintEnd_toEndOf="@id/cancel"
+        app:layout_constraintHorizontal_bias="0.496"
         app:layout_constraintStart_toStartOf="@id/ok"
-        app:layout_constraintTop_toTopOf="parent"
-        android:layout_margin="8dp"
-        />
+        android:padding="8dp"
+        app:layout_constraintTop_toBottomOf="@id/tree"/>
 
     <TextView
         android:id="@+id/password"
-        android:layout_width="wrap_content"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:text="Password"
-        app:layout_constraintTop_toBottomOf="@+id/username"
+        android:background="@color/white"
+        android:layout_marginTop="8dp"
+        android:padding="8dp"
+        app:layout_constraintTop_toBottomOf="@id/username"
         app:layout_constraintStart_toStartOf="@id/ok"
         app:layout_constraintEnd_toEndOf="@id/cancel"
-         />
+        />
     <Button
         android:id="@+id/ok"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Go"
+        android:text="Ok"
         android:layout_margin="8dp"
-        app:layout_constraintTop_toBottomOf="@+id/password"
+        app:layout_constraintTop_toBottomOf="@id/password"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        />
+        app:layout_constraintHorizontal_bias="0.35">
+
+    </Button>
+
     <Button
-        android:id="@+id/cancel"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="cancel"
-        android:layout_margin="8dp"
-        app:layout_constraintStart_toEndOf="@+id/ok"
-        app:layout_constraintTop_toTopOf="@id/ok"
-        />
+        android:text="Cancel"
+        android:id="@+id/cancel"
+        android:layout_marginLeft="8dp"
+        app:layout_constraintStart_toEndOf="@id/ok"
+        app:layout_constraintTop_toTopOf="@id/ok">
 
+
+    </Button>
 </androidx.constraintlayout.widget.ConstraintLayout>
