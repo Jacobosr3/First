@@ -5,20 +5,19 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity"
-    android:background="@color/purple_200"
+    android:background="@color/teal_700"
     >
 
 
     <ImageView
-        android:layout_width="100dp"
-        android:layout_height="100dp"
+        android:id="@+id/ancla"
+        android:layout_width="114dp"
+        android:layout_height="112dp"
         android:layout_marginTop="128dp"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
         android:src="@drawable/ancla"
-        android:id="@+id/tree"
-        >
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
 
     </ImageView>
 
@@ -27,16 +26,17 @@
         android:layout_height="wrap_content"
         android:id="@+id/tilusername"
         android:layout_marginTop="32dp"
-        app:layout_constraintTop_toBottomOf="@id/tree"
+        app:layout_constraintTop_toBottomOf="@id/ancla"
         app:layout_constraintStart_toStartOf="@id/guideline1"
         app:layout_constraintEnd_toEndOf="@id/guideline2"
-
+        app:startIconDrawable="@android:drawable/ic_menu_help"
         >
         <EditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="@color/white"
-            android:hint="Username">
+            android:hint="Username"
+            >
         </EditText>
 
     </com.google.android.material.textfield.TextInputLayout>
@@ -49,7 +49,7 @@
         app:layout_constraintStart_toStartOf="@id/guideline1"
         app:layout_constraintEnd_toEndOf="@id/guideline2"
         app:passwordToggleEnabled="true"
-        app:startIconDrawable="@android:drawable/ic_menu_help"
+        app:startIconDrawable="@android:drawable/ic_dialog_info"
         >
         <EditText
             android:layout_width="match_parent"
@@ -66,27 +66,40 @@
 
     <Button
         android:id="@+id/login"
-        android:layout_width="120dp"
-        android:layout_height="wrap_content"
-        android:layout_margin="8dp"
         android:text="Login"
-        android:backgroundTint="@color/teal_200"
-
         app:layout_constraintStart_toStartOf="@id/guideline1"
-        app:layout_constraintTop_toBottomOf="@id/tilpassword">
+        app:layout_constraintTop_toBottomOf="@id/tilpassword"
+        style="@style/loginbutton">
 
     </Button>
 
     <Button
         android:id="@+id/cancel"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="8dp"
         android:text="Cancel"
-        android:backgroundTint="@color/teal_700"
         app:layout_constraintEnd_toStartOf="@id/guideline2"
         app:layout_constraintStart_toEndOf="@id/login"
-        app:layout_constraintTop_toTopOf="@id/login">
+        app:layout_constraintTop_toTopOf="@id/login"
+        style="@style/cancelbutton">
+    </Button>
+
+    <TextView
+        android:id="@+id/text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Have you got an account?"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/login">
+
+    </TextView>
+
+    <Button
+        android:id="@+id/up"
+        android:text="sign up here"
+        app:layout_constraintEnd_toStartOf="@id/guideline2"
+        app:layout_constraintTop_toBottomOf="@id/text"
+        style="@style/upbutton">
     </Button>
 
     <androidx.constraintlayout.widget.Guideline
@@ -94,15 +107,14 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="vertical"
-        app:layout_constraintGuide_percent="0.2"
-        />
+        app:layout_constraintGuide_percent="0.16" />
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/guideline2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="vertical"
-        app:layout_constraintGuide_percent="0.80" />
+        app:layout_constraintGuide_percent="0.84" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
