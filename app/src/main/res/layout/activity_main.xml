@@ -13,7 +13,7 @@
         android:id="@+id/ancla"
         android:layout_width="114dp"
         android:layout_height="112dp"
-        android:layout_marginTop="128dp"
+        android:layout_marginTop="112dp"
         android:src="@drawable/ancla"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -29,13 +29,32 @@
         app:layout_constraintTop_toBottomOf="@id/ancla"
         app:layout_constraintStart_toStartOf="@id/guideline1"
         app:layout_constraintEnd_toEndOf="@id/guideline2"
-        app:startIconDrawable="@android:drawable/ic_menu_help"
         >
         <EditText
+            android:id="@+id/username"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="@color/white"
             android:hint="Username"
+            >
+        </EditText>
+
+    </com.google.android.material.textfield.TextInputLayout>
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/tilemail"
+
+        app:layout_constraintTop_toBottomOf="@id/tilusername"
+        app:layout_constraintStart_toStartOf="@id/guideline1"
+        app:layout_constraintEnd_toEndOf="@id/guideline2"
+        >
+        <EditText
+            android:id="@+id/email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:hint="Email"
             >
         </EditText>
 
@@ -45,13 +64,14 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:id="@+id/tilpassword"
-        app:layout_constraintTop_toBottomOf="@id/tilusername"
+        app:layout_constraintTop_toBottomOf="@id/tilemail"
         app:layout_constraintStart_toStartOf="@id/guideline1"
         app:layout_constraintEnd_toEndOf="@id/guideline2"
         app:passwordToggleEnabled="true"
-        app:startIconDrawable="@android:drawable/ic_dialog_info"
+        app:startIconDrawable="@android:drawable/ic_partial_secure"
         >
         <EditText
+            android:id="@+id/password"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="@color/white"
