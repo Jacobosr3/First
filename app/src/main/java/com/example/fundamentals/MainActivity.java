@@ -8,10 +8,12 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
 
-    Button up, cancel;
+    Button cancel;
+    TextView up;
     EditText username, password, email;
 
     @SuppressLint("MissingInflatedId")
@@ -20,7 +22,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        up=findViewById(R.id.up);
+        up=findViewById(R.id.text);
         cancel=findViewById(R.id.cancel);
         username=findViewById(R.id.username);
         email=findViewById(R.id.email);
@@ -47,6 +49,8 @@ public class MainActivity extends AppCompatActivity {
 
     public void paginaSiguiente() {
         Intent intent=new Intent(this, Activity_signup.class);
+//        intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+//        intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK);
         startActivity(intent);
     }
 }

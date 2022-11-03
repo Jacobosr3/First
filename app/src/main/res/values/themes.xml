@@ -13,4 +13,13 @@
         <item name="android:statusBarColor">?attr/colorPrimaryVariant</item>
         <!-- Customize your theme here. -->
     </style>
+
+    <style name="MyTheme" parent="Theme.Fundamentals">
+<!--        <item name="android:backgroundTint">@color/purple_200</item>-->
+    </style>
+    <style name="MyTheme.NoActionBar" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+<!--        <item name="android:backgroundTint"></item>-->
+    </style>
+
+
 </resources>
