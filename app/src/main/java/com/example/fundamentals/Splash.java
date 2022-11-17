@@ -6,6 +6,8 @@ import android.content.Intent;
 import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
 import android.os.Handler;
+import android.view.animation.Animation;
+import android.view.animation.AnimationUtils;
 import android.widget.ImageView;
 
 import com.bumptech.glide.Glide;
@@ -30,6 +32,10 @@ public class Splash extends AppCompatActivity {
                 .placeholder(new ColorDrawable(this.getResources().getColor(R.color.teal_200)))
 //                .circleCrop()
                 .into(mar);
+
+        ImageView logo = findViewById(R.id.logosplash);
+        Animation myanim = AnimationUtils.loadAnimation(this, R.anim.shake);
+        logo.startAnimation(myanim);
     }
 
     private void openApp() {
@@ -41,6 +47,8 @@ public class Splash extends AppCompatActivity {
             public void run() {
                 Intent intent = new Intent(Splash
                         .this, MainActivity.class);
+                        intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK); //no volver para atras
+                        intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK);
                 startActivity(intent);
             }
         }, 4000);

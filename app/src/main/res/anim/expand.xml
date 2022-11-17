@@ -6,6 +6,6 @@
     android:toYScale="30%"
     android:pivotX="50%"
     android:pivotY="50%"
-    android:interpolator="@anim/cycle"
-    android:duration="3000"
+    android:interpolator="@anim/cycle2"
+    android:duration="4000"
      />
