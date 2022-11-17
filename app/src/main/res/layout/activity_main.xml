@@ -9,6 +9,13 @@
     >
 
     <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/fondo"
+        android:scaleType="fitStart"
+        />
+
+    <ImageView
         android:id="@+id/ancla"
         android:layout_width="114dp"
         android:layout_height="112dp"
@@ -92,7 +99,7 @@
 
     </Button>
 
-    <Button
+        <Button
         android:id="@+id/cancel"
         android:text="Cancel"
         app:layout_constraintEnd_toStartOf="@id/guideline2"
