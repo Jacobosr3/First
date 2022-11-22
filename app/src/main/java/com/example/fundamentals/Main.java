@@ -61,14 +61,14 @@ private SwipeRefreshLayout swipeLayout;
 
     @Override
     public boolean onContextItemSelected(MenuItem item) {
-
+        final ConstraintLayout mLayout = findViewById(R.id.myMainConstraint);
         switch (item.getItemId()) {
             case R.id.item1:
                /* Toast toast = Toast.makeText(this, "Item copied",
                         Toast.LENGTH_LONG);
                 toast.show();*/
 
-               final ConstraintLayout mLayout = findViewById(R.id.myMainConstraint);
+
 
                Snackbar snackbar = Snackbar
                        .make(mLayout, "fancy a Snack while you refresh?", Snackbar.LENGTH_LONG)
@@ -88,6 +88,17 @@ private SwipeRefreshLayout swipeLayout;
                 Toast toast2 = Toast.makeText(this, "Downloading item...",
                         Toast.LENGTH_LONG);
                 toast2.show();
+
+               /* Snackbar bar = Snackbar
+                        .make(mLayout, "fancy do you now?", Snackbar.LENGTH_LONG)
+                        .setAction("porque no mequieres", new View.OnClickListener() {
+                    @Override
+                            public void onClick(View view){
+                        Snackbar bar2 = Snackbar.make(mLayout, "ahora si queimes mir??", Snackbar.LENGTH_SHORT);
+                        bar2.show();
+                    }
+
+            });*/
                 return true;
 
             default:
