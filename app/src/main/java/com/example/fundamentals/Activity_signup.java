@@ -29,7 +29,6 @@ public class Activity_signup extends AppCompatActivity {
             public void onClick(View view) {
                 username.setText("");
                 password.setText("");
-
             }
         });
     }

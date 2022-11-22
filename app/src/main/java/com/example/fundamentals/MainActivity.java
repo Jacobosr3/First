@@ -17,7 +17,7 @@ import com.bumptech.glide.Glide;
 
 public class MainActivity extends AppCompatActivity {
 
-    Button cancel;
+    Button cancel, login;
     TextView up;
     EditText username, password, email;
 
@@ -29,6 +29,7 @@ public class MainActivity extends AppCompatActivity {
 
         up=findViewById(R.id.text);
         cancel=findViewById(R.id.cancel);
+        login=findViewById(R.id.login);
         username=findViewById(R.id.username);
         email=findViewById(R.id.email);
         password=findViewById(R.id.password);
@@ -47,6 +48,14 @@ public class MainActivity extends AppCompatActivity {
                 username.setText("");
                 email.setText("");
                 password.setText("");
+
+            }
+        });
+
+        login.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+             paginaSiguiente2();
 
             }
         });
@@ -70,4 +79,11 @@ public class MainActivity extends AppCompatActivity {
 //        intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK);
         startActivity(intent);
     }
+    public void paginaSiguiente2() {
+        Intent intent=new Intent(this, Main.class);
+//        intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK); //no volver para atras
+//        intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK);
+        startActivity(intent);
+    }
+
 }
