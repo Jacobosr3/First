@@ -8,17 +8,22 @@
     android:background="@drawable/gradient"
     >
 
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/fondo"
+        android:scaleType="fitStart"
+        />
 
     <ImageView
         android:id="@+id/ancla"
-        android:layout_width="82dp"
-        android:layout_height="80dp"
-        android:layout_marginTop="30dp"
+        android:layout_width="114dp"
+        android:layout_height="112dp"
+        android:layout_marginTop="112dp"
         android:src="@drawable/ancla"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
-
     </ImageView>
 
     <com.google.android.material.textfield.TextInputLayout
@@ -35,7 +40,26 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="@color/white"
-            android:hint="Username or email"
+            android:hint="Username"
+            >
+        </EditText>
+
+    </com.google.android.material.textfield.TextInputLayout>
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/tilemail"
+
+        app:layout_constraintTop_toBottomOf="@id/tilusername"
+        app:layout_constraintStart_toStartOf="@id/guideline1"
+        app:layout_constraintEnd_toEndOf="@id/guideline2"
+        >
+        <EditText
+            android:id="@+id/email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:hint="Email"
             >
         </EditText>
 
@@ -45,7 +69,7 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:id="@+id/tilpassword"
-        app:layout_constraintTop_toBottomOf="@id/tilusername"
+        app:layout_constraintTop_toBottomOf="@id/tilemail"
         app:layout_constraintStart_toStartOf="@id/guideline1"
         app:layout_constraintEnd_toEndOf="@id/guideline2"
         app:passwordToggleEnabled="true"
@@ -74,7 +98,7 @@
 
     </Button>
 
-    <Button
+        <Button
         android:id="@+id/cancel"
         android:text="Cancel"
         app:layout_constraintEnd_toStartOf="@id/guideline2"
@@ -83,19 +107,33 @@
         style="@style/cancelbutton">
     </Button>
 
+    <TextView
+        android:id="@+id/text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/bangers"
+        android:onClick="openSignup"
+        android:text="Have you got an account? Sign up here"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/login">
+
+    </TextView>
+
+
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/guideline1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="vertical"
-        app:layout_constraintGuide_percent="0.3" />
+        app:layout_constraintGuide_percent="0.16" />
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/guideline2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="vertical"
-        app:layout_constraintGuide_percent="0.7" />
-
+        app:layout_constraintGuide_percent="0.84" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

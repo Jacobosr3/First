@@ -13,7 +13,6 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.webkit.WebView;
-import android.widget.TextView;
 import android.widget.Toast;
 
 import com.google.android.material.dialog.MaterialAlertDialogBuilder;
@@ -26,7 +25,7 @@ private SwipeRefreshLayout swipeLayout;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main2);
+        setContentView(R.layout.activity_main);
 
         WebView mycontext = (WebView) findViewById(R.id.vistaweb);
         registerForContextMenu(mycontext);
@@ -137,12 +136,12 @@ private SwipeRefreshLayout swipeLayout;
         }
 
         if (id == R.id.item3) {
-            Intent intent = new Intent(Main.this, MainActivity.class);
+            Intent intent = new Intent(Main.this, Activity_login.class);
             startActivity(intent);
         }
 
         if (id == R.id.item4) {
-            Intent intent = new Intent(this, MainActivity.class);
+            Intent intent = new Intent(this, Activity_login.class);
             startActivity(intent);
         }
 

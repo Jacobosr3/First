@@ -46,7 +46,7 @@ public class Splash extends AppCompatActivity {
             @Override
             public void run() {
                 Intent intent = new Intent(Splash
-                        .this, MainActivity.class);
+                        .this, Activity_login.class);
                         intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK); //no volver para atras
                         intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK);
                 startActivity(intent);

@@ -15,7 +15,7 @@ import android.widget.TextView;
 
 import com.bumptech.glide.Glide;
 
-public class MainActivity extends AppCompatActivity {
+public class Activity_login extends AppCompatActivity {
 
     Button cancel, login;
     TextView up;
@@ -25,7 +25,7 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_login);
 
         up=findViewById(R.id.text);
         cancel=findViewById(R.id.cancel);
