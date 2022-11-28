@@ -13,7 +13,7 @@ Implememtación de las animaciones.
 
 ![GitHub Logo](/images/colorbutton.png)
 [Estilo del boton](./app/src/main/res/color/buttonselector.xml)
-Estilo del boton cambaiando el color durante esta presionado.
+Estilo del boton cambiando el color durante esta presionado.
 
 ![GitHub Logo](/images/drawable.png)
 [Carpeta drawable](./app/src/main/res/drawable)
@@ -21,5 +21,11 @@ He añadido las imagenes y logos que iba a utilizar.
 
 ###### Cambios en la carpeta layout
 ![GitHub Logo](/images/activity_login.png)
-[Carpeta drawable](./app/src/main/res/layout/activity_login.xml)
-Se ha añadido el gradiante en el background y la imagen de la mujer modificandose la funte del texto
+[Activity login](./app/src/main/res/layout/activity_login.xml)
+Se ha añadido el gradiante en el background y la imagen de la mujer modificandose la funte del texto.
+
+
+
+![GitHub Logo](/images/activity_main.png)
+[Activity main](./app/src/main/res/layout/activity_main.xml)
+Implementación de appbar, toolbar y una WebView puediendo refrescandolo. 
