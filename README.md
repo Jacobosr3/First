@@ -41,8 +41,8 @@ Configuración del [Menu appbar.](./app/src/main/res/menu/menu_appbar.xml)
 #### Cambios en la carpeta java
 
 ![GitHub Logo](/images/java_login.png)
-[Java del login](./app/src/main/java/com/example/fundamentals/Activity_login.kt) le cuál contiene las variables, clases y metodos necesarios para cambiar de layaout,
+[Java del login](https://github.com/Jacobosr3/First/blob/master/app/src/main/java/com/example/fundamentals/Activity_login.java) le cuál contiene las variables, clases y metodos necesarios para cambiar de layaout,
 limpiar los tetxos o mostrar la imagen de fondo
 
 ![GitHub Logo](/images/java_signup.png)
-[Java signup](./app/src/main/java/com/example/fundamentals/Activity_signup.kt) sencillo el cual solo tiene la limpieza del texto tras presionar un boton.
+[Java signup](https://github.com/Jacobosr3/First/blob/master/app/src/main/java/com/example/fundamentals/Activity_signup.java) sencillo el cual solo tiene la limpieza del texto tras presionar un boton.
