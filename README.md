@@ -30,6 +30,7 @@ Implementación de appbar, toolbar y una WebView puediendo refrescandolo.
 
 ![GitHub Logo](/images/activity_spash.png)
 [Activity splash](./app/src/main/res/layout/activity_splash.xml) con la que ese abre la aplicación con una animacion en el logo.
+También se ha añadido la [carpeta layout land](./app/src/main/res/layout-land) con la finalidad de al voltear el dispositivo en horizontal se adapte al cambio
 
 ![GitHub Logo](/images/menu_appbar.png)
 Configuración del [Menu appbar.](./app/src/main/res/menu/menu_appbar.xml)
@@ -39,3 +40,9 @@ Configuración del [Menu appbar.](./app/src/main/res/menu/menu_appbar.xml)
 
 #### Cambios en la carpeta java
 
+![GitHub Logo](/images/java_login.png)
+[Java del login](./app/src/main/java/com/example/fundamentals/Activity_login.kt) le cuál contiene las variables, clases y metodos necesarios para cambiar de layaout,
+limpiar los tetxos o mostrar la imagen de fondo
+
+![GitHub Logo](/images/java_signup.png)
+[Java signup](./app/src/main/java/com/example/fundamentals/Activity_signup.kt) sencillo el cual solo tiene la limpieza del texto tras presionar un boton.
