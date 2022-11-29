@@ -47,12 +47,12 @@ limpiar los tetxos o mostrar la imagen de fondo.
 ![GitHub Logo](/images/java_signup.png)
 [Java signup](https://github.com/Jacobosr3/First/blob/master/app/src/main/java/com/example/fundamentals/Activity_signup.java) sencillo el cual solo tiene la limpieza del texto tras presionar un boton.
 
-![GitHub Logo](/images/java main.png)
+![GitHub Logo](/images/java_main.png)
 [Java main](https://github.com/Jacobosr3/First/blob/master/app/src/main/java/com/example/fundamentals/Main.java) 
 en el esta los métodos de toolbar, la configuración de refrescar la página y la selección de imagen manteniendo nos da
 la opcion de copiar y pegar mostrandonos un toast.
 
-![GitHub Logo](/images/java splash.png)
+![GitHub Logo](/images/java_splash.png)
 [Java splash](https://github.com/Jacobosr3/First/blob/master/app/src/main/java/com/example/fundamentals/Splash.java)
 con el cuál que inicia la aplicación con una imagen utilizando glide y haciendo que el logo este animado.
 
