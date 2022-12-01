@@ -1,3 +1,28 @@
 <resources>
-    <string name="app_name">First</string>
+    <string name="app_name" translatable="false">FIRST</string>
+    <string name="username">Username</string>
+    <string name="email" translatable="false">Email</string>
+    <string name="password">Password</string>
+    <string name="login">Login</string>
+    <string name="cancel">Cancel</string>
+    <string name="sentence">Have you got an account? Sign up here</string>
+    <string name="useremail">Username or email</string>
+    <string name="copy">Copy</string>
+    <string name="setting">Setting</string>
+    <string name="appbar">Bottom app bar</string>
+    <string name="navigation">Bottom navigation</string>
+    <string name="signout">signout</string>
+    <string name="dowloand">Dowloand</string>
+    <string name="refresh">Hi there! I dont exist :)</string>
+    <string name="caution">Caution!</string>
+    <string name="where">Where do you go?</string>
+    <string name="signup">Signup</string>
+    <string name="dono">Do nothing!</string>
+    <string name="Other">Other</string>
+    <string name="Infecting">Infecting</string>
+    <string name="Fixing">Fixing</string>
+    <string name="fancy">fancy a Snack while you refresh?</string>
+    <string name="Action">Action is restored!</string>
+    <string name="UNDO">UNDO</string>
+    <string name="Downloading">Downloading item...</string>
 </resources>

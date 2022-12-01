@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="username">Usuario</string>
+    <string name="password">Contraseña</string>
+    <string name="login">Inicio de sesión</string>
+    <string name="cancel">Cancelar</string>
+    <string name="sentence">Tienes una cuenta? Registrate aquí</string>
+    <string name="useremail">Usuario or email</string>
+    <string name="copy">Copiar</string>
+    <string name="setting">Ajustes</string>
+    <string name="appbar">Botón app bar</string>
+    <string name="navigation">Botón navigation</string>
+    <string name="signout">Cerrar sesión</string>
+    <string name="dowloand">Descargar</string>
+    <string name="refresh">Hola! Yo no existo :)</string>
+    <string name="caution">Peligro!</string>
+    <string name="where">Donde estas yendo?</string>
+    <string name="signup">Registrarse</string>
+    <string name="dono">No hace nada!</string>
+    <string name="Other">Otro</string>
+    <string name="Infecting">Infectado</string>
+    <string name="Fixing">Fijado</string>
+    <string name="fancy">Te apetece un Snack mientras te refrescas?</string>
+    <string name="Action">La acción se restablece!</string>
+    <string name="UNDO">DESHACER</string>
+    <string name="Downloading">Descargando elemento...</string>
+</resources>

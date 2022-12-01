@@ -39,7 +39,7 @@ private SwipeRefreshLayout swipeLayout;
         //La vista dentro es un webview con permiso para zoom
         miVersionWeb = (WebView) findViewById(R.id.vistaweb);
         //  miVersionWeb.getSettings().setJavaScriptEnabled(true);
-        miVersionWeb.getSettings().setBuiltInZoomControls(true);
+        miVersionWeb.getSettings().setBuiltInZoomControls(true);//lupita
         miVersionWeb.loadUrl("https://thispersondoesnotexist.com");
     }
 
@@ -49,21 +49,21 @@ private SwipeRefreshLayout swipeLayout;
         public void onRefresh() {
 
 
-            Toast toast0 = Toast.makeText(Main.this, "Hi there! I don't exist :)", Toast.LENGTH_LONG);
+            Toast toast0 = Toast.makeText(Main.this, R.string.refresh, Toast.LENGTH_LONG);
             toast0.show();
             miVersionWeb.reload();
             swipeLayout.setRefreshing(false);
         }
     };
-
+//mensaje cuadrado
     public void showAlertDialogButtonClicked(Main mainActivity) {
 
         // setup the alert builder
         MaterialAlertDialogBuilder builder = new MaterialAlertDialogBuilder(this);
 
 //        //el dialogo estandar tiene título/icono pero podemos sustituirlo por un XML a medida
-        builder.setTitle("Achtung!");
-        builder.setMessage("Where do you go?");
+        builder.setTitle(R.string.caution);
+        builder.setMessage(R.string.where);
         builder.setIcon(R.drawable.ancla);
         builder.setCancelable(false);
 
@@ -71,7 +71,7 @@ private SwipeRefreshLayout swipeLayout;
 //        builder.setView(getLayoutInflater().inflate(R.layout.alertdialog_view, null));
 
         // add the buttons
-        builder.setPositiveButton("Signup", new DialogInterface.OnClickListener() {
+        builder.setPositiveButton(R.string.signup, new DialogInterface.OnClickListener() {
             @Override
             public void onClick(DialogInterface dialog, int which) {
                 // do something like...
@@ -82,7 +82,7 @@ private SwipeRefreshLayout swipeLayout;
             }
         });
 
-        builder.setNegativeButton("Do nothing", new DialogInterface.OnClickListener() {
+        builder.setNegativeButton(R.string.dono, new DialogInterface.OnClickListener() {
             @Override
             public void onClick(DialogInterface dialog, int which) {
 
@@ -92,7 +92,7 @@ private SwipeRefreshLayout swipeLayout;
             }
         });
 
-        builder.setNeutralButton("Other", new DialogInterface.OnClickListener() {
+        builder.setNeutralButton(R.string.Other, new DialogInterface.OnClickListener() {
             @Override
             public void onClick(DialogInterface dialog, int which) {
 
@@ -107,8 +107,9 @@ private SwipeRefreshLayout swipeLayout;
         dialog.show();
     }
 
-    //implementing ActionBar/AppBar menu
 
+
+    //implementing ActionBar/AppBar menu
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
@@ -126,12 +127,12 @@ private SwipeRefreshLayout swipeLayout;
         if (id == R.id.item1) {
 //            showAlertDialogButtonClicked(Main.this);
 
-            Toast toast = Toast.makeText(this, "Infecting", Toast.LENGTH_LONG);
+            Toast toast = Toast.makeText(this, R.string.Infecting, Toast.LENGTH_LONG);
             toast.show();
 
         }
         if (id == R.id.item2) {
-            Toast toast = Toast.makeText(this, "Fixing", Toast.LENGTH_LONG);
+            Toast toast = Toast.makeText(this, R.string.Fixing, Toast.LENGTH_LONG);
             toast.show();
         }
 
@@ -172,11 +173,11 @@ private SwipeRefreshLayout swipeLayout;
 
 
                Snackbar snackbar = Snackbar
-                       .make(mLayout, "fancy a Snack while you refresh?", Snackbar.LENGTH_LONG)
-                       .setAction("UNDO", new View.OnClickListener() {
+                       .make(mLayout, R.string.fancy, Snackbar.LENGTH_LONG)
+                       .setAction(R.string.UNDO, new View.OnClickListener() {
                            @Override
                            public void onClick(View view) {
-                               Snackbar snackbar1 = Snackbar.make(mLayout, "Action is restored!", Snackbar.LENGTH_SHORT);
+                               Snackbar snackbar1 = Snackbar.make(mLayout, R.string.Action, Snackbar.LENGTH_SHORT);
                                snackbar1.show();
                            }
                        });
@@ -186,16 +187,16 @@ private SwipeRefreshLayout swipeLayout;
                 return true;
 
             case R.id.item2:
-                Toast toast2 = Toast.makeText(this, "Downloading item...",
+                Toast toast2 = Toast.makeText(this, R.string.Downloading,
                         Toast.LENGTH_LONG);
                 toast2.show();
 
                /* Snackbar bar = Snackbar
                         .make(mLayout, "fancy do you now?", Snackbar.LENGTH_LONG)
-                        .setAction("porque no mequieres", new View.OnClickListener() {
+                        .setAction("mensaje del numero 1", new View.OnClickListener() {
                     @Override
                             public void onClick(View view){
-                        Snackbar bar2 = Snackbar.make(mLayout, "ahora si queimes mir??", Snackbar.LENGTH_SHORT);
+                        Snackbar bar2 = Snackbar.make(mLayout, "numero 2 su mensaje", Snackbar.LENGTH_SHORT);
                         bar2.show();
                     }
 

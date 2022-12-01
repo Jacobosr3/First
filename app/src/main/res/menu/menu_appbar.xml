@@ -3,29 +3,29 @@
     xmlns:app="http://schemas.android.com/apk/res-auto">
     <item
         android:id="@+id/item1"
-        android:title="Copy"
+        android:title="@string/copy"
         android:icon="@mipmap/ic_launcher_copy_round"
         app:showAsAction="ifRoom" />
     <item
         android:id="@+id/item2"
-        android:title="Settings"
+        android:title="@string/setting"
         android:icon="@mipmap/ic_launcher_setting_foreground"
         app:showAsAction="ifRoom" />
 
     <item
         android:id="@+id/item3"
-        android:title="Bottom app bar"
+        android:title="@string/appbar"
         app:showAsAction="never" />
 
     <item
         android:id="@+id/item4"
-        android:title="Bottom navigation"
+        android:title="@string/navigation"
         app:showAsAction="never" />
 
 
     <item
         android:id="@+id/item5"
-        android:title="Signout"
+        android:title="@string/signout"
         app:showAsAction="never" />
 
 </menu>
