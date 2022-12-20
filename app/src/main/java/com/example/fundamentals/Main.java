@@ -186,6 +186,7 @@ private SwipeRefreshLayout swipeLayout;
 
                 return true;
 
+
             case R.id.item2:
                 Toast toast2 = Toast.makeText(this, R.string.Downloading,
                         Toast.LENGTH_LONG);
